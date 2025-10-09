@@ -1,0 +1,5 @@
+TSCC = sum(
+    (model.CS_cv[c, v] * model.X[c, v, p] +
+     model.alpha_cvp[c, v, p] * model.Z[c, v, p])
+    for c in model.C for v in model.V for p in model.P
+)
